@@ -20,12 +20,12 @@
   background: url(header.jpg);
   background-size: cover;
   background-position: center;
-  padding: 0;
 }
 
 .jumbotron {
   margin: 0;
   border-radius: none;
+  padding: 0;
 }
 
 .overlay {
@@ -64,4 +64,10 @@
 
 #wedding-details:hover {
   background-color: #fff;
+}
+
+#flowers {
+  background: url(flowers.jpg);
+  background-size: cover;
+  background-position: center;
 }
