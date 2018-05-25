@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>We're Engaged</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,14 +23,14 @@
             <a class="nav-link btn btn-default" href="#wedding">Wedding</a>
           </li>
           <li class="nav-item col-sm-3">
-            <a class="nav-link btn btn-default" id="rsvp" href="#">RSVP</a>
+            <a class="nav-link btn btn-default" id="rsvp" href="#div-rsvp">RSVP</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   
-  <div name="header" class="jumbotron text-center text-white text-shadow" id="header">
+  <div class="jumbotron text-center text-white text-shadow" id="header">
     <div class="overlay">
       <h1 class="display-3">Jane & John</h1>
       <h3>Are Getting Married</h3>  
@@ -38,7 +38,7 @@
     </div>
   </div>
 
-  <div name="info" class="jumbotron text-center info">
+  <div class="jumbotron text-center info" id="info">
     <div class="container">
       <h2 class="text-shadow">Jane & John</h2>
       <img src="info.jpg" class="img">
@@ -55,7 +55,7 @@
     </div>
   </div>
 
-  <div name="wedding" id="wedding" class="jumbotron text-center info">
+  <div id="wedding" class="jumbotron text-center info" id="wedding">
     <div class="container">
       <h2 class="text-shadow text-uppercase">The Wedding</h2>
       <img src="chapple.jpg" class="img">
@@ -74,6 +74,41 @@
     </div>
   </div>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+  <div class="jumbotron text-center" id="div-rsvp">
+    <h1 class="text-uppercase">Hope you can make it!</h1>
+    <p>Kindly Respond By January, 2017</p>
+    <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#rsvpModal" id="btn-rsvp">
+      RSVP
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade text-center" id="rsvpModal" tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-uppercase" id="rsvpModalLabel">Can you come?</h5>
+        </div>
+        <div class="modal-body">
+          <p>We really hope you can make it.</p>
+          <input type="text" class="form-control" placeholder="Name(s)">
+        </div>
+        <div class="container">
+          <div class="row pb-3">
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-block btn-success"   data-dismiss="modal">Going</button>
+            </div>
+            <div class="col-sm-6">
+              <button type="button" class="btn btn-block btn-danger">Can't come</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

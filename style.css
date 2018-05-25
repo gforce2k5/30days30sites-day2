@@ -72,3 +72,27 @@
   background-size: cover;
   background-position: center;
 }
+
+#div-rsvp {
+  background-color: #FFDDDD;
+  padding: 5% 0;
+}
+
+#div-rsvp p {
+  font-size: 130%;
+}
+
+#rsvpModalLabel {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#btn-rsvp {
+  background-color: #f44336;
+  color: white;
+}
+
+#btn-rsvp:hover {
+  background-color: #CCCCCC;
+  color: black;
+}
