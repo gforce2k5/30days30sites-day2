@@ -1,0 +1,17 @@
+.navbar {
+  background-color: rgba(52, 58, 64, 0.5)
+}
+
+.navbar:hover {
+  background-color: #343a40;
+}
+
+.btn-default:hover {
+  background-color: white;
+  color: #343a40 !important;
+}
+
+#rsvp:hover {
+  background-color: black;
+  color: white !important;
+}
